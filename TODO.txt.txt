@@ -9,7 +9,12 @@ x Generate insert and update PostgreSQL statements
 o Ordered list after edit + add
 
 
-
+const urls = ['url1', 'url2'];
+forkJoin(
+  urls.map(url => this.http.get(url))
+).subscribe(responses => {
+  // Handle responses
+});
 
 
 
