@@ -1,12 +1,12 @@
-* List icons: create line icon
-* Filter list: order by solid, outline, polygon
-* Implement search: the search bar should work
-* Add an id property
+x List icons: create line icon
+x Filter list: order by solid, outline, polygon
+x Implement search: the search bar should work
+x Add an id property
 	-> Will be assigned one after insert to db (returned?)
 	-> Or once pushed to db, fetch the data with the new id
-* Add back the manage tab (Fetch and Save to db)
-* Generate insert and update PostgreSQL statements
-
+x Add back the manage tab (Fetch and Save to db)
+x Generate insert and update PostgreSQL statements
+o Ordered list after edit + add
 
 
 
