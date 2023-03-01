@@ -19,9 +19,123 @@ forkJoin(
 
 
 
+
+
+
 [
 	{
-		"name": "Gravel Roads",
+		"name": "Plan - Water Pipes",
+		"style": {
+			"width": 4,
+			"color": [
+				1,
+				0.706,
+				0,
+				0.5
+			],
+			"outlineColor": [
+				0.173,
+				0.184,
+				0.969,
+				0.5
+			],
+			"outlineWidth": 4,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Liquid Waste Tank Footprint",
+		"style": {
+			"width": 4,
+			"color": [
+				0.349,
+				0.565,
+				0.373,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Building",
+		"style": {
+			"color": [
+				0.451,
+				0.122,
+				0.58,
+				0
+			],
+			"outlineColor": [
+				0.451,
+				0.122,
+				0.58,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Site Boundary",
+		"style": {
+			"color": [
+				0.404,
+				0.902,
+				0.851,
+				0
+			],
+			"outlineColor": [
+				0.404,
+				0.902,
+				0.851,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Special Area",
+		"style": {
+			"color": [
+				0.498,
+				0.267,
+				0.267,
+				0
+			],
+			"outlineColor": [
+				0.498,
+				0.267,
+				0.267,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Cadastre",
+		"style": {
+			"color": [
+				0.937,
+				0.647,
+				0.898,
+				0
+			],
+			"outlineColor": [
+				0.937,
+				0.647,
+				0.898,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Gravel Road",
 		"style": {
 			"width": 4,
 			"color": [
@@ -31,79 +145,46 @@ forkJoin(
 				1
 			],
 			"type": "solidColor"
-		}
+		},
+		"id": -1
 	},
 	{
-		"name": "Wall",
+		"name": "Stockpile",
 		"style": {
-			"width": 4,
 			"color": [
-				0.431,
-				0.2,
-				0.42,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Weighbridge Backup Generator",
-		"style": {
-			"width": 4,
-			"color": [
-				0.878,
-				0.251,
-				0.847,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Soffit",
-		"style": {
-			"width": 4,
-			"color": [
-				0.792,
-				0.549,
-				0.78,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Retaining Wall",
-		"style": {
-			"width": 4,
-			"color": [
-				0.431,
-				0.2,
-				0.42,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Water Lines to Fire Hydrant",
-		"style": {
-			"width": 4,
-			"color": [
-				0.851,
-				0.298,
-				0.251,
-				1
+				0.341,
+				0.616,
+				0.533,
+				0
 			],
 			"outlineColor": [
-				0.094,
-				0.11,
-				0.957,
+				0.341,
+				0.616,
+				0.533,
 				1
 			],
-			"outlineWidth": 5,
-			"type": "polylineOutline"
-		}
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Plan - Pavement",
+		"style": {
+			"color": [
+				0.561,
+				0.204,
+				0.62,
+				0
+			],
+			"outlineColor": [
+				0.561,
+				0.204,
+				0.62,
+				0.51
+			],
+			"type": "polygon"
+		},
+		"id": -1
 	},
 	{
 		"name": "Water Pipe UG",
@@ -121,243 +202,10 @@ forkJoin(
 				0.969,
 				1
 			],
-			"outlineWidth": 5,
+			"outlineWidth": 4,
 			"type": "polylineOutline"
-		}
-	},
-	{
-		"name": "Ladder",
-		"style": {
-			"width": 4,
-			"color": [
-				0.753,
-				0.753,
-				0.753,
-				1
-			],
-			"outlineColor": [
-				0.102,
-				0.102,
-				0.102,
-				1
-			],
-			"outlineWidth": 5,
-			"type": "polylineOutline"
-		}
-	},
-	{
-		"name": "Electrical Cable (Approx.)",
-		"style": {
-			"width": 4,
-			"color": [
-				0.925,
-				0.631,
-				0,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Building",
-		"style": {
-			"color": [
-				0.451,
-				0.122,
-				0.58,
-				0.1
-			],
-			"outlineColor": [
-				0.451,
-				0.122,
-				0.58,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Concrete Slab",
-		"style": {
-			"color": [
-				0.451,
-				0.122,
-				0.58,
-				0.1
-			],
-			"outlineColor": [
-				0.451,
-				0.122,
-				0.58,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Cadastre",
-		"style": {
-			"color": [
-				0.937,
-				0.647,
-				0.898,
-				0.11
-			],
-			"outlineColor": [
-				0.937,
-				0.647,
-				0.898,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Garage",
-		"style": {
-			"color": [
-				0.8,
-				0.275,
-				0.729,
-				0.1
-			],
-			"outlineColor": [
-				0.8,
-				0.275,
-				0.729,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Weighbridge",
-		"style": {
-			"color": [
-				0.537,
-				0.537,
-				0.537,
-				0.1
-			],
-			"outlineColor": [
-				0.537,
-				0.537,
-				0.537,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Water Tank",
-		"style": {
-			"color": [
-				0,
-				0.243,
-				0.863,
-				1
-			],
-			"outlineColor": [
-				0,
-				0.243,
-				0.863,
-				1
-			],
-			"type": "polygon"
-		}
-	},
-	{
-		"name": "Liquid Waste Tank Footprint",
-		"style": {
-			"width": 4,
-			"color": [
-				0.349,
-				0.565,
-				0.373,
-				1
-			],
-			"type": "solidColor"
-		}
-	},
-	{
-		"name": "Leachate Irrigation Pipe AG",
-		"style": {
-			"width": 4,
-			"color": [
-				0.961,
-				0.996,
-				0.251,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		}
-	},
-	{
-		"name": "Leachate Irrigation Pipe UG",
-		"style": {
-			"width": 4,
-			"color": [
-				0.325,
-				0.953,
-				0.925,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		}
-	},
-	{
-		"name": "Leachate Collection Drain ",
-		"style": {
-			"width": 4,
-			"color": [
-				0.569,
-				0.314,
-				0.612,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		}
-	},
-	{
-		"name": "Leachate Rising Drain",
-		"style": {
-			"width": 4,
-			"color": [
-				0.314,
-				0.357,
-				0.612,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		}
+		},
+		"id": -1
 	},
 	{
 		"name": "DORF Leachate Transfer",
@@ -377,7 +225,27 @@ forkJoin(
 			],
 			"outlineWidth": 3,
 			"type": "polylineOutline"
-		}
+		},
+		"id": -1
+	},
+	{
+		"name": "Old Dump",
+		"style": {
+			"color": [
+				0.937,
+				0.224,
+				0.224,
+				0
+			],
+			"outlineColor": [
+				0.937,
+				0.224,
+				0.224,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
 	},
 	{
 		"name": "Mixing Pit",
@@ -386,7 +254,7 @@ forkJoin(
 				0.898,
 				0.616,
 				0.075,
-				0.1
+				0
 			],
 			"outlineColor": [
 				0.898,
@@ -395,24 +263,495 @@ forkJoin(
 				1
 			],
 			"type": "polygon"
-		}
+		},
+		"id": -1
+	},
+	{
+		"name": "Water Lines to Fire Hydrant",
+		"style": {
+			"width": 4,
+			"color": [
+				0.769,
+				0.165,
+				0.102,
+				1
+			],
+			"outlineColor": [
+				0.173,
+				0.184,
+				0.969,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Sewer Pipe",
+		"style": {
+			"width": 4,
+			"color": [
+				0.706,
+				0.643,
+				0.404,
+				1
+			],
+			"outlineColor": [
+				0.075,
+				0.075,
+				0.075,
+				1
+			],
+			"outlineWidth": 5,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Gas Recovery Pipe",
+		"style": {
+			"width": 4,
+			"color": [
+				0.992,
+				1,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "TasGas Pipeline",
+		"style": {
+			"width": 4,
+			"color": [
+				0.992,
+				1,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
 	},
 	{
 		"name": "Milk Pump Shed",
 		"style": {
 			"color": [
-				0.914,
-				0.329,
-				0.298,
+				0.792,
+				0.557,
+				0.557,
 				0
 			],
 			"outlineColor": [
-				0.914,
-				0.329,
-				0.298,
+				0.792,
+				0.557,
+				0.557,
 				1
 			],
 			"type": "polygon"
-		}
+		},
+		"id": -1
+	},
+	{
+		"name": "Leachate Rising Main",
+		"style": {
+			"width": 4,
+			"color": [
+				0.314,
+				0.357,
+				0.612,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Soffit",
+		"style": {
+			"width": 4,
+			"color": [
+				0.792,
+				0.549,
+				0.78,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Retaining Wall",
+		"style": {
+			"width": 4,
+			"color": [
+				0.431,
+				0.2,
+				0.42,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Wall",
+		"style": {
+			"width": 4,
+			"color": [
+				0.467,
+				0.275,
+				0.569,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Plan - Drainage (Above Ground)",
+		"style": {
+			"width": 4,
+			"color": [
+				0.188,
+				0.859,
+				0.102,
+				0.5
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Weighbridge Backup Generator",
+		"style": {
+			"width": 4,
+			"color": [
+				0.878,
+				0.251,
+				0.847,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Leachate Collection Drain ",
+		"style": {
+			"width": 4,
+			"color": [
+				0.569,
+				0.314,
+				0.612,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Plan - Electrical Lines",
+		"style": {
+			"width": 4,
+			"color": [
+				1,
+				0.706,
+				0,
+				0.5
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Gate",
+		"style": {
+			"width": 4,
+			"color": [
+				0.596,
+				0.439,
+				0.063,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Fence",
+		"style": {
+			"width": 4,
+			"color": [
+				0.173,
+				0.173,
+				0.173,
+				1
+			],
+			"outlineColor": [
+				0.937,
+				0.741,
+				0.769,
+				1
+			],
+			"outlineWidth": 4,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Hazardous Waste Cell - Closed",
+		"style": {
+			"width": 4,
+			"color": [
+				0.427,
+				1,
+				0.851,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Ladder",
+		"style": {
+			"width": 4,
+			"color": [
+				0.753,
+				0.753,
+				0.753,
+				1
+			],
+			"outlineColor": [
+				0.102,
+				0.102,
+				0.102,
+				1
+			],
+			"outlineWidth": 5,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Water Tank",
+		"style": {
+			"color": [
+				0,
+				0.243,
+				0.863,
+				1
+			],
+			"outlineColor": [
+				0,
+				0.243,
+				0.863,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Garage",
+		"style": {
+			"color": [
+				0.8,
+				0.275,
+				0.729,
+				0
+			],
+			"outlineColor": [
+				0.8,
+				0.275,
+				0.729,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Leachate Irrigation Pipe UG",
+		"style": {
+			"width": 4,
+			"color": [
+				0.325,
+				0.953,
+				0.925,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "Leachate Irrigation Pipe AG",
+		"style": {
+			"width": 4,
+			"color": [
+				0.961,
+				0.996,
+				0.251,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": -1
+	},
+	{
+		"name": "TasGas Easement",
+		"style": {
+			"width": 4,
+			"color": [
+				0.78,
+				0.337,
+				0.404,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Pump Well",
+		"style": {
+			"color": [
+				0.631,
+				0.859,
+				0.91,
+				0.5
+			],
+			"outlineColor": [
+				0.631,
+				0.639,
+				0.91,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Pit Outline",
+		"style": {
+			"color": [
+				0.02,
+				0.231,
+				0.525,
+				0
+			],
+			"outlineColor": [
+				0.02,
+				0.231,
+				0.525,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Concrete Slab",
+		"style": {
+			"color": [
+				0.451,
+				0.122,
+				0.58,
+				0
+			],
+			"outlineColor": [
+				0.451,
+				0.122,
+				0.58,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Weighbridge",
+		"style": {
+			"color": [
+				0.537,
+				0.537,
+				0.537,
+				0
+			],
+			"outlineColor": [
+				0.537,
+				0.537,
+				0.537,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": -1
+	},
+	{
+		"name": "Electrical Cable (Approx.)",
+		"style": {
+			"width": 4,
+			"color": [
+				0.925,
+				0.631,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": -1
+	},
+	{
+		"name": "Plan - Storage / Tanks",
+		"style": {
+			"color": [
+				0.012,
+				0.184,
+				1,
+				0.5
+			],
+			"outlineColor": [
+				0.012,
+				0.184,
+				1,
+				0.5
+			],
+			"type": "polygon"
+		},
+		"id": -1
 	}
 ]
