@@ -6,7 +6,8 @@ x Add an id property
 	-> Or once pushed to db, fetch the data with the new id
 x Add back the manage tab (Fetch and Save to db)
 x Generate insert and update PostgreSQL statements
-o Ordered list after edit + add
+x Ordered list after edit + add
+o Add a 'Sort by...' select
 
 
 const urls = ['url1', 'url2'];
