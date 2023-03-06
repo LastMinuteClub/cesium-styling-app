@@ -7,7 +7,10 @@ x Add an id property
 x Add back the manage tab (Fetch and Save to db)
 x Generate insert and update PostgreSQL statements
 x Ordered list after edit + add
-o Add a 'Sort by...' select
+
+o Add a 'Sort by...' select -> type, color? nah
+x Color picker implementation pls
+
 
 
 const urls = ['url1', 'url2'];
