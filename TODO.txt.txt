@@ -8,8 +8,11 @@ x Add back the manage tab (Fetch and Save to db)
 x Generate insert and update PostgreSQL statements
 x Ordered list after edit + add
 
-o Add a 'Sort by...' select -> type, color? nah
 x Color picker implementation pls
+o Add a 'Sort by...' select -> type, color?
+o Add import modes -> additive, overwrite
+
+
 
 
 
@@ -27,230 +30,6 @@ forkJoin(
 
 [
 	{
-		"name": "Plan - Water Pipes",
-		"style": {
-			"width": 4,
-			"color": [
-				1,
-				0.706,
-				0,
-				0.5
-			],
-			"outlineColor": [
-				0.173,
-				0.184,
-				0.969,
-				0.5
-			],
-			"outlineWidth": 4,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Liquid Waste Tank Footprint",
-		"style": {
-			"width": 4,
-			"color": [
-				0.349,
-				0.565,
-				0.373,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Building",
-		"style": {
-			"color": [
-				0.451,
-				0.122,
-				0.58,
-				0
-			],
-			"outlineColor": [
-				0.451,
-				0.122,
-				0.58,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Site Boundary",
-		"style": {
-			"color": [
-				0.404,
-				0.902,
-				0.851,
-				0
-			],
-			"outlineColor": [
-				0.404,
-				0.902,
-				0.851,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Special Area",
-		"style": {
-			"color": [
-				0.498,
-				0.267,
-				0.267,
-				0
-			],
-			"outlineColor": [
-				0.498,
-				0.267,
-				0.267,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Cadastre",
-		"style": {
-			"color": [
-				0.937,
-				0.647,
-				0.898,
-				0
-			],
-			"outlineColor": [
-				0.937,
-				0.647,
-				0.898,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Gravel Road",
-		"style": {
-			"width": 4,
-			"color": [
-				0.02,
-				0.012,
-				0.02,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Stockpile",
-		"style": {
-			"color": [
-				0.341,
-				0.616,
-				0.533,
-				0
-			],
-			"outlineColor": [
-				0.341,
-				0.616,
-				0.533,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Plan - Pavement",
-		"style": {
-			"color": [
-				0.561,
-				0.204,
-				0.62,
-				0
-			],
-			"outlineColor": [
-				0.561,
-				0.204,
-				0.62,
-				0.51
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Water Pipe UG",
-		"style": {
-			"width": 4,
-			"color": [
-				0.918,
-				0.698,
-				0.227,
-				1
-			],
-			"outlineColor": [
-				0.173,
-				0.184,
-				0.969,
-				1
-			],
-			"outlineWidth": 4,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "DORF Leachate Transfer",
-		"style": {
-			"width": 4,
-			"color": [
-				0.969,
-				0.659,
-				0.071,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Old Dump",
-		"style": {
-			"color": [
-				0.937,
-				0.224,
-				0.224,
-				0
-			],
-			"outlineColor": [
-				0.937,
-				0.224,
-				0.224,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
 		"name": "Mixing Pit",
 		"style": {
 			"color": [
@@ -267,351 +46,7 @@ forkJoin(
 			],
 			"type": "polygon"
 		},
-		"id": -1
-	},
-	{
-		"name": "Water Lines to Fire Hydrant",
-		"style": {
-			"width": 4,
-			"color": [
-				0.769,
-				0.165,
-				0.102,
-				1
-			],
-			"outlineColor": [
-				0.173,
-				0.184,
-				0.969,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Sewer Pipe",
-		"style": {
-			"width": 4,
-			"color": [
-				0.706,
-				0.643,
-				0.404,
-				1
-			],
-			"outlineColor": [
-				0.075,
-				0.075,
-				0.075,
-				1
-			],
-			"outlineWidth": 5,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Gas Recovery Pipe",
-		"style": {
-			"width": 4,
-			"color": [
-				0.992,
-				1,
-				0,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "TasGas Pipeline",
-		"style": {
-			"width": 4,
-			"color": [
-				0.992,
-				1,
-				0,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Milk Pump Shed",
-		"style": {
-			"color": [
-				0.792,
-				0.557,
-				0.557,
-				0
-			],
-			"outlineColor": [
-				0.792,
-				0.557,
-				0.557,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Leachate Rising Main",
-		"style": {
-			"width": 4,
-			"color": [
-				0.314,
-				0.357,
-				0.612,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Soffit",
-		"style": {
-			"width": 4,
-			"color": [
-				0.792,
-				0.549,
-				0.78,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Retaining Wall",
-		"style": {
-			"width": 4,
-			"color": [
-				0.431,
-				0.2,
-				0.42,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Wall",
-		"style": {
-			"width": 4,
-			"color": [
-				0.467,
-				0.275,
-				0.569,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Plan - Drainage (Above Ground)",
-		"style": {
-			"width": 4,
-			"color": [
-				0.188,
-				0.859,
-				0.102,
-				0.5
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Weighbridge Backup Generator",
-		"style": {
-			"width": 4,
-			"color": [
-				0.878,
-				0.251,
-				0.847,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Leachate Collection Drain ",
-		"style": {
-			"width": 4,
-			"color": [
-				0.569,
-				0.314,
-				0.612,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Plan - Electrical Lines",
-		"style": {
-			"width": 4,
-			"color": [
-				1,
-				0.706,
-				0,
-				0.5
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Gate",
-		"style": {
-			"width": 4,
-			"color": [
-				0.596,
-				0.439,
-				0.063,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Fence",
-		"style": {
-			"width": 4,
-			"color": [
-				0.173,
-				0.173,
-				0.173,
-				1
-			],
-			"outlineColor": [
-				0.937,
-				0.741,
-				0.769,
-				1
-			],
-			"outlineWidth": 4,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Hazardous Waste Cell - Closed",
-		"style": {
-			"width": 4,
-			"color": [
-				0.427,
-				1,
-				0.851,
-				1
-			],
-			"type": "solidColor"
-		},
-		"id": -1
-	},
-	{
-		"name": "Ladder",
-		"style": {
-			"width": 4,
-			"color": [
-				0.753,
-				0.753,
-				0.753,
-				1
-			],
-			"outlineColor": [
-				0.102,
-				0.102,
-				0.102,
-				1
-			],
-			"outlineWidth": 5,
-			"type": "polylineOutline"
-		},
-		"id": -1
-	},
-	{
-		"name": "Water Tank",
-		"style": {
-			"color": [
-				0,
-				0.243,
-				0.863,
-				1
-			],
-			"outlineColor": [
-				0,
-				0.243,
-				0.863,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Garage",
-		"style": {
-			"color": [
-				0.8,
-				0.275,
-				0.729,
-				0
-			],
-			"outlineColor": [
-				0.8,
-				0.275,
-				0.729,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Leachate Irrigation Pipe UG",
-		"style": {
-			"width": 4,
-			"color": [
-				0.325,
-				0.953,
-				0.925,
-				1
-			],
-			"outlineColor": [
-				0.357,
-				0.612,
-				0.314,
-				1
-			],
-			"outlineWidth": 3,
-			"type": "polylineOutline"
-		},
-		"id": -1
+		"id": 20
 	},
 	{
 		"name": "Leachate Irrigation Pipe AG",
@@ -632,21 +67,67 @@ forkJoin(
 			"outlineWidth": 3,
 			"type": "polylineOutline"
 		},
-		"id": -1
+		"id": 15
 	},
 	{
-		"name": "TasGas Easement",
+		"name": "Stockpile",
+		"style": {
+			"color": [
+				0.341,
+				0.616,
+				0.533,
+				0
+			],
+			"outlineColor": [
+				0.341,
+				0.616,
+				0.533,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 41
+	},
+	{
+		"name": "Old Dump",
+		"style": {
+			"color": [
+				0.937,
+				0.224,
+				0.224,
+				0
+			],
+			"outlineColor": [
+				0.937,
+				0.224,
+				0.224,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 39
+	},
+	{
+		"name": "Plan - Drainage (Above Ground)",
 		"style": {
 			"width": 4,
 			"color": [
-				0.78,
-				0.337,
-				0.404,
-				1
+				0.188,
+				0.859,
+				0.102,
+				0.5
 			],
 			"type": "solidColor"
 		},
-		"id": -1
+		"id": 28
+	},
+	{
+		"name": "Electrical Pole",
+		"style": {
+			"imageAsBase64": "data:image/png;base64,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AuMlyl73+Xdfd9/+fdPu3w+BVXKt/QezRgAADfdpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDQuNC4wLUV4aXYyIj4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6NWJjYzA2NzAtOTY0ZS00YmRmLTk3MTktOWVlMzM1NTRmYzMyIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmQ0ODU0NWFlLTA4NjQtNDZiYy1hYmUzLTc4ODkyZGVhNGFlMSIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmUxNjFiNGU5LTU3ZDUtNGRiOS04YTUwLThjOWM1ZjFiYTAyMiIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09IldpbmRvd3MiCiAgIEdJTVA6VGltZVN0YW1wPSIxNjcwNDY5OTA1ODYwNDc0IgogICBHSU1QOlZlcnNpb249IjIuMTAuMzAiCiAgIHRpZmY6T3JpZW50YXRpb249IjEiCiAgIHhtcDpDcmVhdG9yVG9vbD0iR0lNUCAyLjEwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MWU4ODY0Y2EtOThmZC00NzcyLThmOGYtN2ZhNmI0MzZhM2U1IgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIyLTEyLTA4VDE0OjIyOjQ0Ii8+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InNhdmVkIgogICAgICBzdEV2dDpjaGFuZ2VkPSIvIgogICAgICBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjEzNmMyNWY5LTUzZTMtNDE3My04NDlkLTNhMzA1ZmY4ZTZmNCIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iR2ltcCAyLjEwIChXaW5kb3dzKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMi0xMi0wOFQxNDoyNTowNSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz5EeDvHAAAABmJLR0QAGgBPAIhLtvWzAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5gwIAxkF5aF0HwAAA9RJREFUSMe1lj1sHFUQx3/vvd29vS9/nBWbRJEtIVdQoEAaC5Q+UlCAUBElVEFWChdEIIIRonGHKVwapUmgQUqEROEWXGCJRIBEa6E4keLEh+3Lfe7t7ntDsecTSWyHEDPde5o3//nPzM5/YR9zdnNMXHxRXPKDuHhdxFoRERFrxcXrvfuLzm6O7RdH7R58q6JUcRblfQCUbHKPJFrFpmsgNVBDGG8CP5zE+EcAmki6KNKa06ay9VQQZx+eULp4FWEi7vxGp36NJL4BRLukE+IH75AfOEeQPwaKNXGt89oMLu8J4uz2W0oPfOvSzUJza4E4+hqwPN0MQXiBUmUG7Y20xdXPajP8/RMgGYPSkk3uFOrVGWy6glLjiFSBzt71VuM46aCoYrwpBg4tYPzxtrjmyR1Gut8DXbyK2EKjegmbrgCQL1/Gz72/L4d8+TJB7l0AbLpCa/sbEFdQunjV2a1Kn4m47jyYD116H5v+hSBZEcwg4ro4ifYu1GM+WoWItPHDVwD7ldK5S8rZzTGlh1bj9q8lpTy84CjPa53GMl4wTlB4tSmuNqmVKp8BSp36tV7+B2Od+jWAklLlMx6okza5RxLfQDUOk/i7M9HeIcLCaztjQrP2E4Lb1dfGK9jkBjb5COO9cNIDOZ5Eq0BE1PkOHa0DaRZKxoAYrbbxc9N9EBFHt/0FyAZOxlDEKLXde1NBKY0iIolWMaWx4xplRm26BsDgyJcIh/sZFcsfE+RO71uWYvkT/Nyb/bMfnKZQnu1N2xooM+qB1kgtm3k9THHgc+iVwcu9iPHHceEU2gz/49vQFMpzgOv5HMWFr2dlNRWc7W0WqQFae+Acakj3XpMvv/FoqrtOm37U7zGfTqO3VdQQ4JxG7IbxJvg/zHgTIHbDA3XLDydPQZ6o9Qtp9889HowQ5F/unYSo+TMiu++1OPojW57hJKBueSBLxj9yyg/eJm7PEu+RlZ+b7oOIWFr1T0E29mThB+9lMiB2SYs0rgPN/MA5wBxUocji0RRpXNfajDxA0sUgf4wgvHAgEEF4IdMXSRe1GXmgM/qtORRrpcoMxpt6zmZPUarMZAImrbn+qtemsiWudV57I+2BQwv/GWhHTzLhap3fkWLdn3wzuCyuftb44+3B0SsE4fQz9MgQhNMMjl7pCVb97OMS/ITGi6S3xaXSbd2U2vqMVNeOSu3+Z+LSqri0KjZZl+qdl7L79Rnptm6KuFRE0tvOPjzxr/JydqsirjsvYhsiVtL4rnTbv4uzdXH2oThbk07jR0njuyJiRcQ2xHXnd5Twmeyg/rv+BpYgGn2f+1DuAAAAAElFTkSuQmCC",
+			"type": "image"
+		},
+		"id": 43
 	},
 	{
 		"name": "Pump Well",
@@ -665,78 +146,40 @@ forkJoin(
 			],
 			"type": "polygon"
 		},
-		"id": -1
+		"id": 35
 	},
 	{
-		"name": "Pit Outline",
+		"name": "Plan - Pavement",
 		"style": {
 			"color": [
-				0.02,
-				0.231,
-				0.525,
+				0.561,
+				0.204,
+				0.62,
 				0
 			],
 			"outlineColor": [
-				0.02,
-				0.231,
-				0.525,
-				1
+				0.561,
+				0.204,
+				0.62,
+				0.51
 			],
 			"type": "polygon"
 		},
-		"id": -1
+		"id": 37
 	},
 	{
-		"name": "Concrete Slab",
-		"style": {
-			"color": [
-				0.451,
-				0.122,
-				0.58,
-				0
-			],
-			"outlineColor": [
-				0.451,
-				0.122,
-				0.58,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Weighbridge",
-		"style": {
-			"color": [
-				0.537,
-				0.537,
-				0.537,
-				0
-			],
-			"outlineColor": [
-				0.537,
-				0.537,
-				0.537,
-				1
-			],
-			"type": "polygon"
-		},
-		"id": -1
-	},
-	{
-		"name": "Electrical Cable (Approx.)",
+		"name": "Liquid Waste Tank Footprint",
 		"style": {
 			"width": 4,
 			"color": [
-				0.925,
-				0.631,
-				0,
+				0.349,
+				0.565,
+				0.373,
 				1
 			],
 			"type": "solidColor"
 		},
-		"id": -1
+		"id": 14
 	},
 	{
 		"name": "Plan - Storage / Tanks",
@@ -755,6 +198,820 @@ forkJoin(
 			],
 			"type": "polygon"
 		},
-		"id": -1
+		"id": 36
+	},
+	{
+		"name": "Building",
+		"style": {
+			"color": [
+				0.451,
+				0.122,
+				0.58,
+				0
+			],
+			"outlineColor": [
+				0.451,
+				0.122,
+				0.58,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 8
+	},
+	{
+		"name": "Special Area",
+		"style": {
+			"color": [
+				0.498,
+				0.267,
+				0.267,
+				0
+			],
+			"outlineColor": [
+				0.498,
+				0.267,
+				0.267,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 40
+	},
+	{
+		"name": "Plan - Water Pipes",
+		"style": {
+			"width": 4,
+			"color": [
+				1,
+				0.706,
+				0,
+				0.5
+			],
+			"outlineColor": [
+				0.173,
+				0.184,
+				0.969,
+				0.5
+			],
+			"outlineWidth": 4,
+			"type": "polylineOutline"
+		},
+		"id": 27
+	},
+	{
+		"name": "Cadastre",
+		"style": {
+			"color": [
+				0.937,
+				0.647,
+				0.898,
+				0
+			],
+			"outlineColor": [
+				0.937,
+				0.647,
+				0.898,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 11
+	},
+	{
+		"name": "Geology - Jd",
+		"style": {
+			"color": [
+				0.941,
+				0.686,
+				0.2,
+				0.99
+			],
+			"outlineColor": [
+				0.941,
+				0.686,
+				0.2,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 46
+	},
+	{
+		"name": "Milk Pump Shed",
+		"style": {
+			"color": [
+				0.792,
+				0.557,
+				0.557,
+				0
+			],
+			"outlineColor": [
+				0.792,
+				0.557,
+				0.557,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 21
+	},
+	{
+		"name": "Leachate Collection Drain ",
+		"style": {
+			"width": 4,
+			"color": [
+				0.569,
+				0.314,
+				0.612,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": 17
+	},
+	{
+		"name": "Plan - Electrical Lines",
+		"style": {
+			"width": 4,
+			"color": [
+				1,
+				0.706,
+				0,
+				0.5
+			],
+			"type": "solidColor"
+		},
+		"id": 29
+	},
+	{
+		"name": "Leachate Rising Main",
+		"style": {
+			"width": 4,
+			"color": [
+				0.314,
+				0.357,
+				0.612,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": 18
+	},
+	{
+		"name": "Water Pipe UG",
+		"style": {
+			"width": 4,
+			"color": [
+				0.918,
+				0.698,
+				0.227,
+				1
+			],
+			"outlineColor": [
+				0.173,
+				0.184,
+				0.969,
+				1
+			],
+			"outlineWidth": 4,
+			"type": "polylineOutline"
+		},
+		"id": 2
+	},
+	{
+		"name": "Wall",
+		"style": {
+			"width": 4,
+			"color": [
+				0.467,
+				0.275,
+				0.569,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 1
+	},
+	{
+		"name": "Electrical Cable (Approx.)",
+		"style": {
+			"width": 4,
+			"color": [
+				0.925,
+				0.631,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 7
+	},
+	{
+		"name": "Gas Recovery Pipe",
+		"style": {
+			"width": 4,
+			"color": [
+				0.992,
+				1,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 25
+	},
+	{
+		"name": "Water Lines to Fire Hydrant",
+		"style": {
+			"width": 4,
+			"color": [
+				0.769,
+				0.165,
+				0.102,
+				1
+			],
+			"outlineColor": [
+				0.173,
+				0.184,
+				0.969,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": 23
+	},
+	{
+		"name": "Soffit",
+		"style": {
+			"width": 4,
+			"color": [
+				0.792,
+				0.549,
+				0.78,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 6
+	},
+	{
+		"name": "Pit Outline",
+		"style": {
+			"color": [
+				0.02,
+				0.231,
+				0.525,
+				0
+			],
+			"outlineColor": [
+				0.02,
+				0.231,
+				0.525,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 34
+	},
+	{
+		"name": "Weighbridge",
+		"style": {
+			"color": [
+				0.537,
+				0.537,
+				0.537,
+				0
+			],
+			"outlineColor": [
+				0.537,
+				0.537,
+				0.537,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 12
+	},
+	{
+		"name": "Fence",
+		"style": {
+			"width": 4,
+			"color": [
+				0.173,
+				0.173,
+				0.173,
+				1
+			],
+			"outlineColor": [
+				0.937,
+				0.741,
+				0.769,
+				1
+			],
+			"outlineWidth": 4,
+			"type": "polylineOutline"
+		},
+		"id": 31
+	},
+	{
+		"name": "Ladder",
+		"style": {
+			"width": 4,
+			"color": [
+				0.753,
+				0.753,
+				0.753,
+				1
+			],
+			"outlineColor": [
+				0.102,
+				0.102,
+				0.102,
+				1
+			],
+			"outlineWidth": 5,
+			"type": "polylineOutline"
+		},
+		"id": 22
+	},
+	{
+		"name": "Gate",
+		"style": {
+			"width": 4,
+			"color": [
+				0.596,
+				0.439,
+				0.063,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 30
+	},
+	{
+		"name": "Hazardous Waste Cell - Closed",
+		"style": {
+			"width": 4,
+			"color": [
+				0.427,
+				1,
+				0.851,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 33
+	},
+	{
+		"name": "Leachate Irrigation Pipe UG",
+		"style": {
+			"width": 4,
+			"color": [
+				0.325,
+				0.953,
+				0.925,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": 16
+	},
+	{
+		"name": "Gravel Road",
+		"style": {
+			"width": 4,
+			"color": [
+				0.02,
+				0.012,
+				0.02,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 4
+	},
+	{
+		"name": "Concrete Slab",
+		"style": {
+			"color": [
+				0.451,
+				0.122,
+				0.58,
+				0
+			],
+			"outlineColor": [
+				0.451,
+				0.122,
+				0.58,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 9
+	},
+	{
+		"name": "Retaining Wall",
+		"style": {
+			"width": 4,
+			"color": [
+				0.431,
+				0.2,
+				0.42,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 3
+	},
+	{
+		"name": "TasGas Easement",
+		"style": {
+			"width": 4,
+			"color": [
+				0.78,
+				0.337,
+				0.404,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 32
+	},
+	{
+		"name": "Geology - Other",
+		"style": {
+			"color": [
+				0.988,
+				0.996,
+				0.988,
+				0.99
+			],
+			"outlineColor": [
+				0.988,
+				0.996,
+				0.988,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 51
+	},
+	{
+		"name": "TasGas Pipeline",
+		"style": {
+			"width": 4,
+			"color": [
+				0.992,
+				1,
+				0,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 26
+	},
+	{
+		"name": "Water Tank",
+		"style": {
+			"color": [
+				0,
+				0.243,
+				0.863,
+				1
+			],
+			"outlineColor": [
+				0,
+				0.243,
+				0.863,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 13
+	},
+	{
+		"name": "Site Boundary",
+		"style": {
+			"color": [
+				0.404,
+				0.902,
+				0.851,
+				0
+			],
+			"outlineColor": [
+				0.404,
+				0.902,
+				0.851,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 38
+	},
+	{
+		"name": "DORF Leachate Transfer",
+		"style": {
+			"width": 4,
+			"color": [
+				0.969,
+				0.659,
+				0.071,
+				1
+			],
+			"outlineColor": [
+				0.357,
+				0.612,
+				0.314,
+				1
+			],
+			"outlineWidth": 3,
+			"type": "polylineOutline"
+		},
+		"id": 19
+	},
+	{
+		"name": "Weighbridge Backup Generator",
+		"style": {
+			"width": 4,
+			"color": [
+				0.878,
+				0.251,
+				0.847,
+				1
+			],
+			"type": "solidColor"
+		},
+		"id": 5
+	},
+	{
+		"name": "Fire Extinguisher",
+		"style": {
+			"imageAsBase64": "data:image/png;base64,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",
+			"type": "image"
+		},
+		"id": 42
+	},
+	{
+		"name": "Sewer Pipe",
+		"style": {
+			"width": 4,
+			"color": [
+				0.706,
+				0.643,
+				0.404,
+				1
+			],
+			"outlineColor": [
+				0.075,
+				0.075,
+				0.075,
+				1
+			],
+			"outlineWidth": 5,
+			"type": "polylineOutline"
+		},
+		"id": 24
+	},
+	{
+		"name": "Stop Valve",
+		"style": {
+			"imageAsBase64": "data:image/png;base64,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",
+			"type": "image"
+		},
+		"id": 44
+	},
+	{
+		"name": "Garage",
+		"style": {
+			"color": [
+				0.8,
+				0.275,
+				0.729,
+				0
+			],
+			"outlineColor": [
+				0.8,
+				0.275,
+				0.729,
+				1
+			],
+			"type": "polygon"
+		},
+		"id": 10
+	},
+	{
+		"name": "Geology - Plb",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAxXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMgDPxnio6AHyF4HPKo1A06fi/YREnUkzgbn3Vgp/37eafXASZNOs21WCkZUFPjhqRmR+tMWTs7hkb3ejoFRkkQJfpL9I86nQYeGrLpYlTXEJa7YBr+9WEUD8nxI0ayhZGFkbALFAbNx8rF6nwdYdnzHdVPH62suQ9C4f6864ztbRPeEeZdSDJYRP0DchxJ0pBIZ0Mjodhwr2CSsRMs5N+eBtIPTz9Z5Zia4DwAAAGEaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDQBzFX1PFIlUHC4o4ZKhOdlFRx1LFIlgobYVWHUwu/YImDUmKi6PgWnDwY7Hq4OKsq4OrIAh+gLi6OCm6SIn/SwotYjw47se7e4+7d4DQqDDV7IoCqmYZqXhMzOZWxZ5X+BHAEGbRLzFTT6QXM/AcX/fw8fUuwrO8z/05+pS8yQCfSBxlumERbxDPbFo6533iECtJCvE58YRBFyR+5Lrs8hvnosMCzwwZmdQ8cYhYLHaw3MGsZKjE08RhRdUoX8i6rHDe4qxWaqx1T/7CYF5bSXOd5ijiWEICSYiQUUMZFViI0KqRYiJF+zEP/4jjT5JLJlcZjBwLqEKF5PjB/+B3t2ZhatJNCsaA7hfb/hgDenaBZt22v49tu3kC+J+BK63trzaAuU/S620tfAQMbAMX121N3gMud4DhJ10yJEfy0xQKBeD9jL4pBwzeAr1rbm+tfZw+ABnqavkGODgExouUve7x7kBnb/+eafX3A7yScsRUnSqXAAANdmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDpiNmI1MDNiNy0zZjNlLTRmZjAtYmQ0ZC05NGExNDVjOGY5OTgiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjBhZDRjMzQtZWVjNS00YjhjLTkxNmItZWI5NjA4NWE0OWQwIgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MzE2YzA1MmMtMzIwZS00NDJhLWFhMDYtMTk3OTZlZGExYzlmIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iV2luZG93cyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2NzgzMjU4OTEzMjA3NjQiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zNCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjM6MDM6MDlUMTI6Mzg6MTArMTE6MDAiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDIzOjAzOjA5VDEyOjM4OjEwKzExOjAwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MjFjMmZjZGEtZTg0MS00NTYyLTk2NGUtMmNmN2Y1YzM2M2UyIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIzLTAzLTA5VDEyOjM4OjExIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/Pkv88iEAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfnAwkBJguo84RbAAAAIUlEQVQY02Nc8u/VHwY8gImBACBNwcr1hzEUMNLZDdgAAKq1CTpI/kQ6AAAAAElFTkSuQmCC",
+			"repeat": {
+				"x": 60,
+				"y": 60
+			},
+			"type": "polygonImage"
+		},
+		"id": 53
+	},
+	{
+		"name": "Geology - Pupg",
+		"style": {
+			"color": [
+				0.643,
+				0.945,
+				0.984,
+				0.99
+			],
+			"outlineColor": [
+				0.643,
+				0.945,
+				0.984,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 55
+	},
+	{
+		"name": "Geology - Qha",
+		"style": {
+			"color": [
+				0.961,
+				0.996,
+				0.812,
+				0.99
+			],
+			"outlineColor": [
+				0.961,
+				0.996,
+				0.812,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 56
+	},
+	{
+		"name": "Geology - Tb",
+		"style": {
+			"color": [
+				0.89,
+				0.776,
+				0.353,
+				0.99
+			],
+			"outlineColor": [
+				0.89,
+				0.776,
+				0.353,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 58
+	},
+	{
+		"name": "Geology - Qpal",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAxXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMgDPxnio6AHwEzDnlU6gYdvxfsREnUkziMzzpsp+37eafXDiZNOlUrrZQMaNPGHYFlRx9MWQc7Do3u+XQKjJTglqgvUX/k6TTwqyOaLka2hDDfhabhbw+j+Ej2jhjBGkYtjIRdoDDoPlYuzep1hHnLd5ifMVpZ8hiEwv351ortrRP+EeZNSDJYRL0B2Y8k6QhkcEMhIdnxNjBJjU6wkH97OpB+UFdZ7OsgHG0AAAGEaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDQBzFX1PFIlUHC4o4ZKhOdlFRx1LFIlgobYVWHUwu/YImDUmKi6PgWnDwY7Hq4OKsq4OrIAh+gLi6OCm6SIn/SwotYjw47se7e4+7d4DQqDDV7IoCqmYZqXhMzOZWxZ5X+BHAEGbRLzFTT6QXM/AcX/fw8fUuwrO8z/05+pS8yQCfSBxlumERbxDPbFo6533iECtJCvE58YRBFyR+5Lrs8hvnosMCzwwZmdQ8cYhYLHaw3MGsZKjE08RhRdUoX8i6rHDe4qxWaqx1T/7CYF5bSXOd5ijiWEICSYiQUUMZFViI0KqRYiJF+zEP/4jjT5JLJlcZjBwLqEKF5PjB/+B3t2ZhatJNCsaA7hfb/hgDenaBZt22v49tu3kC+J+BK63trzaAuU/S620tfAQMbAMX121N3gMud4DhJ10yJEfy0xQKBeD9jL4pBwzeAr1rbm+tfZw+ABnqavkGODgExouUve7x7kBnb/+eafX3A7yScsRUnSqXAAANdmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDo5Yzg3MzhiNS1lM2QyLTQ3NzktOTExMy0zYjdmMjdkZGY1NjAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZWY3NmM4NWQtNDkyYy00MzMyLTlhODQtNTFlMzk2M2VmYjU3IgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZmUyNmYyMzktNDQwMy00Mjg3LTk4MDEtMjQ1MDAwYzMzZTZlIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iV2luZG93cyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2NzgzMjU4OTgzNzE2MjMiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zNCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjM6MDM6MDlUMTI6Mzg6MTcrMTE6MDAiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDIzOjAzOjA5VDEyOjM4OjE3KzExOjAwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OTQyMzQ0M2UtMDA4NC00Mzk0LTliMjMtMzRjN2YzMGEwNzY1IgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIzLTAzLTA5VDEyOjM4OjE4Ii8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PqeYaAUAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfnAwkBJhLMmCybAAAAJUlEQVQY02P89+/QHwY8gImBACBNwYoVTzAUMNLZDehgxYonDAANVQvrY3F9NAAAAABJRU5ErkJggg==",
+			"repeat": {
+				"x": 60,
+				"y": 60
+			},
+			"type": "polygonImage"
+		},
+		"id": 60
+	},
+	{
+		"name": "Geology - Ltsd",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TxSJVBwuKOGSoTnZRUcdSxSJYKG2FVh1MLv2CJg1Jiouj4Fpw8GOx6uDirKuDqyAIfoC4ujgpukiJ/0sKLWI8OO7Hu3uPu3eA0Kgw1eyKAqpmGal4TMzmVsWeV/gRwBBm0S8xU0+kFzPwHF/38PH1LsKzvM/9OfqUvMkAn0gcZbphEW8Qz2xaOud94hArSQrxOfGEQRckfuS67PIb56LDAs8MGZnUPHGIWCx2sNzBrGSoxNPEYUXVKF/Iuqxw3uKsVmqsdU/+wmBeW0lzneYo4lhCAkmIkFFDGRVYiNCqkWIiRfsxD/+I40+SSyZXGYwcC6hCheT4wf/gd7dmYWrSTQrGgO4X2/4YA3p2gWbdtr+Pbbt5AvifgSut7a82gLlP0uttLXwEDGwDF9dtTd4DLneA4SddMiRH8tMUCgXg/Yy+KQcM3gK9a25vrX2cPgAZ6mr5Bjg4BMaLlL3u8e5AZ2//nmn19wO8knLE6mrA2gAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAAd0SU1FB+cDCQMwCC7mtFgAAABBSURBVDjLY9y7a8UfBgoAEzmadp07T74Bu86dZ3AzMoTzWfCZjg0ga8YwAN10ksKAHM0oBpCjmexYGDVg1AB0AADhQRI/OyS4sgAAAABJRU5ErkJggg==",
+			"repeat": {
+				"x": 40,
+				"y": 40
+			},
+			"type": "polygonImage"
+		},
+		"id": 47
+	},
+	{
+		"name": "Geology - Ol",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAAxXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMwCPz3FB0BA7HxOE6TSt2g4/dsiJpEPcnHU2cg7Z/3Kz0GOGvSpVpppRCgTRt3OEaOPjmTTvYgLOJLPh15YqQEVjy0Ev1H/ifgpsNbTkL2jMJ6LTQNfbsJxUcyJmI4Wwi1EBL2Qg6B7mtRaVbPK6w7XWH+0qDypLlIDvV7rBXX2xb8I8y7ZCGwiPoAMp4k6XBkckNjRrIjrmAWi0lwkH93OpC+PZ9Z4A6dOn0AAAGEaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDQBzFX1PFIlUHC4o4ZKhOdlFRx1LFIlgobYVWHUwu/YImDUmKi6PgWnDwY7Hq4OKsq4OrIAh+gLi6OCm6SIn/SwotYjw47se7e4+7d4DQqDDV7IoCqmYZqXhMzOZWxZ5X+BHAEGbRLzFTT6QXM/AcX/fw8fUuwrO8z/05+pS8yQCfSBxlumERbxDPbFo6533iECtJCvE58YRBFyR+5Lrs8hvnosMCzwwZmdQ8cYhYLHaw3MGsZKjE08RhRdUoX8i6rHDe4qxWaqx1T/7CYF5bSXOd5ijiWEICSYiQUUMZFViI0KqRYiJF+zEP/4jjT5JLJlcZjBwLqEKF5PjB/+B3t2ZhatJNCsaA7hfb/hgDenaBZt22v49tu3kC+J+BK63trzaAuU/S620tfAQMbAMX121N3gMud4DhJ10yJEfy0xQKBeD9jL4pBwzeAr1rbm+tfZw+ABnqavkGODgExouUve7x7kBnb/+eafX3A7yScsRUnSqXAAANdmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDo4ZWYzOGM0ZC1lNzBmLTRiYjItODZlZi1kMTNmNjBjMTljYTQiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTM4YzIwM2EtMDI4OS00ZDAxLWJlNDgtNDZmMGQ4OWRhYTljIgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZjhlMWE1ZTgtNjIzYi00YjE0LWI4MDktNDhiMzhjNzcyNDE4IgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iV2luZG93cyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2NzgzMjU4NTkxNjkyMzIiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zNCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjM6MDM6MDlUMTI6Mzc6MjgrMTE6MDAiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDIzOjAzOjA5VDEyOjM3OjI4KzExOjAwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzM1OGIxYjQtZDNjMS00YjRiLTliM2EtODI0ZjFkYjc4MDM3IgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIzLTAzLTA5VDEyOjM3OjM5Ii8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PoFJiMMAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfnAwkBJSexBrt7AAAANUlEQVQ4y2P8dyzxDwOFgPHfuyf4DblRy8Cg0YxXCRMDFcCoITQyhJE+6YQQuFE7GjuD2hAA3IwRTMWZAwkAAAAASUVORK5CYII=",
+			"repeat": {
+				"x": 40,
+				"y": 40
+			},
+			"type": "polygonImage"
+		},
+		"id": 48
+	},
+	{
+		"name": "Geology - Osm",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAxXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMgDPxnio6AHwE8DnlU6gYdvxfsREnUkziMzzpsp+37eafXDiZNOtVWrJQMqKlxR9Cyow+mrIMdh0b3fDoFRkpwS9SXqD/ydBr41RFNF6O2hDDfBdPwbw+j+Ej2jhjBGkYWRsIuUBh0HysXa/U6wrzlO5qfMVpZ8hiEwv351ortrRP+EeZNSDJYRL0B2Y8k6QhksKGQkOx4V7BKjU6wkH97OpB+UKdZ7rHdlBsAAAGEaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDQBzFX1PFIlUHC4o4ZKhOdlFRx1LFIlgobYVWHUwu/YImDUmKi6PgWnDwY7Hq4OKsq4OrIAh+gLi6OCm6SIn/SwotYjw47se7e4+7d4DQqDDV7IoCqmYZqXhMzOZWxZ5X+BHAEGbRLzFTT6QXM/AcX/fw8fUuwrO8z/05+pS8yQCfSBxlumERbxDPbFo6533iECtJCvE58YRBFyR+5Lrs8hvnosMCzwwZmdQ8cYhYLHaw3MGsZKjE08RhRdUoX8i6rHDe4qxWaqx1T/7CYF5bSXOd5ijiWEICSYiQUUMZFViI0KqRYiJF+zEP/4jjT5JLJlcZjBwLqEKF5PjB/+B3t2ZhatJNCsaA7hfb/hgDenaBZt22v49tu3kC+J+BK63trzaAuU/S620tfAQMbAMX121N3gMud4DhJ10yJEfy0xQKBeD9jL4pBwzeAr1rbm+tfZw+ABnqavkGODgExouUve7x7kBnb/+eafX3A7yScsRUnSqXAAANdmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDozYmEzZTVlNy1hN2ZjLTRmMDItOTRjOC01MTVmZWI5OTE2YzQiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDgwZWNmYWYtOGE3NS00NjE2LWI2MDItNGY4ZWU3MzRiZDQ5IgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZmVkZmE4MzItNDZhYi00NTVlLWE0NWEtNGUwNjJhYTQ5NWE2IgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iV2luZG93cyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2NzgzMjU4NjkyOTUwNjUiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zNCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjM6MDM6MDlUMTI6Mzc6NDcrMTE6MDAiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDIzOjAzOjA5VDEyOjM3OjQ3KzExOjAwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YWFjMDk0NGQtNmJlYy00MThmLTg4OWYtYzQzNzU0ZjBmODhiIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIzLTAzLTA5VDEyOjM3OjQ5Ii8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PkdatEQAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfnAwkBJTFF0g4qAAAAUklEQVQY032OsQqAQAxDX0pFDvT/P87NPxCcDmkd3HqHb8hQkibq5/EIMA8kBtyX4A+vh/taEdD2jlmOhgyRwCeTD23rCJDl3FA3ee0cArWz8gJREhjwgRAnkgAAAABJRU5ErkJggg==",
+			"repeat": {
+				"x": 50,
+				"y": 50
+			},
+			"type": "polygonImage"
+		},
+		"id": 49
+	},
+	{
+		"name": "Geology - Pubg",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TxSJVBwuKOGSoTnZRUcdSxSJYKG2FVh1MLv2CJg1Jiouj4Fpw8GOx6uDirKuDqyAIfoC4ujgpukiJ/0sKLWI8OO7Hu3uPu3eA0Kgw1eyKAqpmGal4TMzmVsWeV/gRwBBm0S8xU0+kFzPwHF/38PH1LsKzvM/9OfqUvMkAn0gcZbphEW8Qz2xaOud94hArSQrxOfGEQRckfuS67PIb56LDAs8MGZnUPHGIWCx2sNzBrGSoxNPEYUXVKF/Iuqxw3uKsVmqsdU/+wmBeW0lzneYo4lhCAkmIkFFDGRVYiNCqkWIiRfsxD/+I40+SSyZXGYwcC6hCheT4wf/gd7dmYWrSTQrGgO4X2/4YA3p2gWbdtr+Pbbt5AvifgSut7a82gLlP0uttLXwEDGwDF9dtTd4DLneA4SddMiRH8tMUCgXg/Yy+KQcM3gK9a25vrX2cPgAZ6mr5Bjg4BMaLlL3u8e5AZ2//nmn19wO8knLE6mrA2gAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAAd0SU1FB+cDCQMXLMgg4uwAAAAlSURBVBjTY9z19/cfBjyAiYEAIE3B8ttPMBQw0tkN6GD57ScMABgNDDdSlFbiAAAAAElFTkSuQmCC",
+			"repeat": {
+				"x": 50,
+				"y": 50
+			},
+			"type": "polygonImage"
+		},
+		"id": 54
+	},
+	{
+		"name": "Electrical Box",
+		"style": {
+			"imageAsBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TRdGKggVFHDJUJ4uiIo5SxSJYKG2FVh1MLv2CJg1Jiouj4Fpw8GOx6uDirKuDqyAIfoC4ujgpukiJ/0sKLWI8OO7Hu3uPu3eAUCsx1WybAFTNMhLRiJjOrIodrxDQhwF0Y1xiph5LLqbgOb7u4ePrXZhneZ/7c/QoWZMBPpF4jumGRbxBPLNp6Zz3iYOsICnE58RjBl2Q+JHrsstvnPMOCzwzaKQS88RBYjHfwnILs4KhEk8ThxRVo3wh7bLCeYuzWqqwxj35CwNZbSXJdZrDiGIJMcQhQkYFRZRgIUyrRoqJBO1HPPxDjj9OLplcRTByLKAMFZLjB/+D392aualJNykQAdpfbPtjBOjYBepV2/4+tu36CeB/Bq60pr9cA2Y/Sa82tdAR0LsNXFw3NXkPuNwBBp90yZAcyU9TyOWA9zP6pgzQfwt0rbm9NfZx+gCkqKvlG+DgEBjNU/a6x7s7W3v790yjvx+I/nKwGwbciQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+cCEBchIEPUBbsAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACrElEQVQ4y5WVzW+MURTGf+edj3fMR9pUtaMG1Y6PZCopoSxJVKoSSf0BdhYiaUMXvuKr0o1EhC5Y6EaInUpYkLC0KRZaCcG0xoyaDtrSmTGjOsdCTdvxvg0nuYt785wn5zzn3ucKFqGqAuwE2oAmoBoQYBToB+4AD0SkUJorFmTbgR7QSDb9jkw6ylT+EwAudyXeQD0+/ypAXgLtIvLQllBVjwHdX8efy2i8h3yuz6oB3J49BEMdlFU0KtAlImf+IlTV46qF7pHYTcZS+/mXqFhyhZrafYg4ukTk9NzKtqnqdGL4uv5PZDMjGh/qVVUtqGozgMwMYPDb+EAk9mYL65u+M9gvgHdeNYHyE0xOdBf3Xn8nNbUHePuigRXhR5RVNL4CGozf09RIMt4zJ90EPMXlDRzGXLRm3tlc+ZPxi6CFdUCrAbRl0zHyuduWOomUsaz2IJlvj221/JG/RyY9BLDXALZm029twZVLL+ByBfieuWF1y4qRTUcBNhtA9Y98yhLkMluoqmnF4fQS2ZRg9foBRCpsqkwCLHXOzNkStGzlcQzDBMAwTFIfbqM6ZlPjbw4nkHKZVUEryLvXOwChOtSL1x/m69gp27Zd7iBA0gD6vf56O7mBPL7AWj6+v7SghjMcTw2gz+dfhduzxxLocG4kl42Ry96yJXOZLfgCdQB3DOA+yKtgqH0OJA/kgBymZwOjibPF/eya1T0YOoSIIwrc/fP0mlW1EB+69t9P7330qqoWCqraWmoOXarTJxPD15j43PFP5lC++CKhuv2IOM+LyBEr+zoHnJj48kySiQtM5R/YTLSZ4PJOyhdvAuQ8cFRE1M5gdwGXVQvhzGSUbPrNn0uL2wzi9YfxBeoRcQwBHSJyb0HHniF1AruBvSVfQBJ4AvQBd0XkZ2nuLxupYiMlty0rAAAAAElFTkSuQmCC",
+			"type": "image"
+		},
+		"id": 45
+	},
+	{
+		"name": "Geology - Osms",
+		"style": {
+			"color": [
+				0.98,
+				0.875,
+				0.776,
+				0.99
+			],
+			"outlineColor": [
+				0.98,
+				0.875,
+				0.776,
+				0.99
+			],
+			"type": "polygon"
+		},
+		"id": 50
+	},
+	{
+		"name": "Geology - Pfh",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAxHpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMwCPz3FB2BVxwYx3lU6gYdv8TgKIl6kgHfobOh7N/Pu7wOEEqRadZqtYJDTIyaFwqB1iOC9BgYGt75cgrkFHvm7K/ZP3g8DSI1r6aLka4pLHfBJP31YZQP8fEj8mJLI0sjphAwDVqMBdV0vo6w7HCHxumj1RX6IJjuz7vMvr1t8neYaGdk8Mgs8QE+DhduXnCP5o3oZPO7dmbsxBfyb08D5QdPFVnkNIfosgAAAYRpQ0NQSUNDIHByb2ZpbGUAAHicfZE9SMNAHMVfU8UiVQcLijhkqE52UVHHUsUiWChthVYdTC79giYNSYqLo+BacPBjserg4qyrg6sgCH6AuLo4KbpIif9LCi1iPDjux7t7j7t3gNCoMNXsigKqZhmpeEzM5lbFnlf4EcAQZtEvMVNPpBcz8Bxf9/Dx9S7Cs7zP/Tn6lLzJAJ9IHGW6YRFvEM9sWjrnfeIQK0kK8TnxhEEXJH7kuuzyG+eiwwLPDBmZ1DxxiFgsdrDcwaxkqMTTxGFF1ShfyLqscN7irFZqrHVP/sJgXltJc53mKOJYQgJJiJBRQxkVWIjQqpFiIkX7MQ//iONPkksmVxmMHAuoQoXk+MH/4He3ZmFq0k0KxoDuF9v+GAN6doFm3ba/j227eQL4n4Erre2vNoC5T9LrbS18BAxsAxfXbU3eAy53gOEnXTIkR/LTFAoF4P2MvikHDN4CvWtub619nD4AGepq+QY4OATGi5S97vHuQGdv/55p9fcDvJJyxFSdKpcAAA12aVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOmEzYWM5ZTQ4LWQxYWYtNDM5YS04OTFmLWI4Y2VmMGRjZmM0YiIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowYmFlOGRjZC0zYjcyLTQ0ZTQtOWRlYS1hMmYxMzIyY2ZmOTgiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphNzIwMmIzNS1hYzM2LTQwMGYtYTIzZC1mYTM5YmI0NzRlYzIiCiAgIGRjOkZvcm1hdD0iaW1hZ2UvcG5nIgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1QOlRpbWVTdGFtcD0iMTY3ODMyNTg4MTk5ODYwMiIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjM0IgogICB0aWZmOk9yaWVudGF0aW9uPSIxIgogICB4bXA6Q3JlYXRvclRvb2w9IkdJTVAgMi4xMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMzowMzowOVQxMjozODowMCsxMTowMCIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjM6MDM6MDlUMTI6Mzg6MDArMTE6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpmOGUyMDI2OS0yZTExLTQ4YmItOTNhNy0wOTExMDAwMTBhMzQiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoV2luZG93cykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjMtMDMtMDlUMTI6Mzg6MDEiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+imJV9QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAAd0SU1FB+cDCQEmAUgmbUUAAABZSURBVBjTbc7LCYAwFETRYwi414UV2IO9W4ZL+xCE+NkkIDF3NfBm5k233ndSMWPEjgh9FidSPuzZHEpiweBPKOLRJsjVB66GIap+1ptiq3bGhO27oaZsegFQfxG0FYmxEQAAAABJRU5ErkJggg==",
+			"repeat": {
+				"x": 50,
+				"y": 50
+			},
+			"type": "polygonImage"
+		},
+		"id": 52
+	},
+	{
+		"name": "Geology - Qhm",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA8BAMAAAAu+w8FAAAAHlBMVEXh4dn+/oP7+4z8/In5+ZLf397k5ND+/oTi4tb8/IgNU3IrAAAACnRSTlP8/Pz8/Pz8/Pz8kfBCSgAAAHBJREFUOMtjYGAQFGIUBAIFQSEQJSSkBAMKDAzGrgwMAQwMiYJFgkAeAwObIIQGAg4FBkENYyAwCQDxQCxXKA0EHgJAWbB5zSAeiKUBpUFMuGwjiCcIITRGZYeerPhE7LKj6WpUdjRdjcoONlkc6QoAsKqtvyFecVAAAAAASUVORK5CYII=",
+			"repeat": {
+				"x": 10,
+				"y": 10
+			},
+			"type": "polygonImage"
+		},
+		"id": 57
+	},
+	{
+		"name": "Geology - Qpao",
+		"style": {
+			"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAxXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjabVDbDcMgDPxnio6AHyF4HPKo1A06fi/YREnUkziMzzpsp/37eafXASZNOs21WCkZUFPjhqBmR+tMWTs7hkb3fDoFRkpwS9SXqB95Og38aoimi1FdQ1jugmn414dRfCRHR4xgCyMLI2EXKAyaj5WL1fk6wrLnO6qfPlpZcx+Ewv351hnb2yb8I8y7kGSwiHoDchxJ0hBIZ0MhIdnwrmCW0QkW8m9PA+kHUAlZ6nsBemMAAAGEaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDQBzFX1PFIlUHC4o4ZKhOdlFRx1LFIlgobYVWHUwu/YImDUmKi6PgWnDwY7Hq4OKsq4OrIAh+gLi6OCm6SIn/SwotYjw47se7e4+7d4DQqDDV7IoCqmYZqXhMzOZWxZ5X+BHAEGbRLzFTT6QXM/AcX/fw8fUuwrO8z/05+pS8yQCfSBxlumERbxDPbFo6533iECtJCvE58YRBFyR+5Lrs8hvnosMCzwwZmdQ8cYhYLHaw3MGsZKjE08RhRdUoX8i6rHDe4qxWaqx1T/7CYF5bSXOd5ijiWEICSYiQUUMZFViI0KqRYiJF+zEP/4jjT5JLJlcZjBwLqEKF5PjB/+B3t2ZhatJNCsaA7hfb/hgDenaBZt22v49tu3kC+J+BK63trzaAuU/S620tfAQMbAMX121N3gMud4DhJ10yJEfy0xQKBeD9jL4pBwzeAr1rbm+tfZw+ABnqavkGODgExouUve7x7kBnb/+eafX3A7yScsRUnSqXAAANdmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDo5MmMzYmE4MC0wMjNmLTRlMDMtYmNhYi03Njg2ZTIyMTNiYWYiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjNhZWI3YzItNjUyNS00MjQ3LWJhYzAtNjBmYTQzZTg0ZDQ4IgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MWI1MzA4ODAtOTJhOS00MTUwLWI5N2YtZTg0ZDljM2Y5YmJjIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgR0lNUDpBUEk9IjIuMCIKICAgR0lNUDpQbGF0Zm9ybT0iV2luZG93cyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2NzgzMjU5MDUzMzU3MDQiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zNCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjM6MDM6MDlUMTI6Mzg6MjQrMTE6MDAiCiAgIHhtcDpNb2RpZnlEYXRlPSIyMDIzOjAzOjA5VDEyOjM4OjI0KzExOjAwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YzljZjUxZWItNTIwNi00NDkxLWFlYzQtNDQ1YWI5M2M5NjViIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDIzLTAzLTA5VDEyOjM4OjI1Ii8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PvhiGpkAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfnAwkBJhlbSvUTAAAAJUlEQVQY02P8+e/mHwY8gImBACBNwflT7zEUMNLZDejg/Kn3DABbbQy34wJvXQAAAABJRU5ErkJggg==",
+			"repeat": {
+				"x": 60,
+				"y": 60
+			},
+			"type": "polygonImage"
+		},
+		"id": 59
 	}
 ]
