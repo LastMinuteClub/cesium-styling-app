@@ -8,12 +8,12 @@ x Add back the manage tab (Fetch and Save to db)
 x Generate insert and update PostgreSQL statements
 x Ordered list after edit + add
 
-x Color picker implementation pls
+x Color picker implementation
 x Add a 'Sort by...' select -> type, color?
 
 o Add import modes -> additive, overwrite
 o Add a max-height to pages -> grid + overflow?
-
+o Restructure project
 
 
 
